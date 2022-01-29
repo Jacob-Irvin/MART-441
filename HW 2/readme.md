@@ -1,0 +1,1 @@
+I am somewhat familiar with js from previous courses I have taken but I enjoyed this quick refresher and I am looking forward to diving deeper into it this semester!
