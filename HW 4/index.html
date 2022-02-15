@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Advetnure Time</title>
+        <style>body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            align-content: center;
+        }
+        </style>
+    </head>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "left")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block"; 
+               
+                myQuestion.innerHTML = "You turn left and are cut down by a swinging axe";
+            }
+            else if(myChoice === "right")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "You make your way down the hallway and see an old wooden chest, do you open it or pass?";
+            }
+            }// needed to close the first function
+            function getChoice2()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "open")
+            {
+                myQuestion.innerHTML = "Its a trap! The chest was rigged with an arrow and you are shot down.";
+            }
+            else if(answer === "pass")
+            {
+                myQuestion.innerHTML = "Good idea, could have been a trap. You come to an old wooden doorway. Open or turn back?";
+            }
+        }
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice4").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "open")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You walk into a room full of ritches and treasures! Congradulations adventurer!";
+            }
+            else if(answer === "turn back")
+            {
+                myQuestion.innerHTML = "Too bad, there could have been so much treasure!";
+            }
+        }
+    </script>
+    <body>
+            <h1>Dungeon Adventure</h1>
+            <br>
+            <img src="Dungeon.jpeg" id="mainImage">
+        <div id="question">
+        <br>
+            You are a lone adventurer who comes across the entrance of an old and long abonded cave. 
+            <br>
+            In the hopes of finding untold treasures, you enter. 
+            <br>
+            The first room is dimly lit with two stone passeges on either side.
+            <br>
+            Which way do you go, left or right? 
+        </div>
+           
+            <br>
+            <input type="text" size="30" id="choice" value="Enter left or right">
+            <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+    
+            <input type="text" size="30" id="choice2" value="Refresh and try again!" style="display:none">
+            <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+    
+            <input type="text" size="30" id="choice3" value="Enter open or pass."  style="display:none">
+            <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+            <input type="text" size="30" id="choice3" value="Enter open or pass."  style="display:none">
+            <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+</html>
