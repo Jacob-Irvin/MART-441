@@ -15,7 +15,7 @@ function printBlanks()
 function createRandomImageArray()
 {
     var actualImagePath = ["images/jordan 1", "images/jordan 2.jpeg", "images/jordan 3", "images/jordan 4", "images/jordan 5", "images/jordan 6", "images/jordan 7", "images/jordan 8", "images/jordan 9", "images/jordan 10", ];
-    var count = [0,0];
+    var count = [0,0,0,0,0,0,0,0,0,0];
     while(actualImages.length < 10)
     {
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
