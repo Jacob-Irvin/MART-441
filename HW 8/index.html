@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#button").click(function () {
+                    $("#jordan3").fadeOut("slow",function(){
+                        $("#jordan2").fadeOut("slow")});
+            });
+        });
+
+            $(document).ready(function () {
+                $("button2").click(function () {
+                    $("p").animate({up: '250px'});
+            });
+        });
+
+        $(document).ready(function () {
+            $("#square1").click(function () {
+                $(this).hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#square2").click(function () {
+                $(this).hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#square3").click(function () {
+                $(this).hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#square4").click(function () {
+                $(this).hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#square5").click(function () {
+                $(this).hide();
+            });
+        });
+
+
+        </script>
+    </head>
+        <body>
+            <img id="jordan1" src="images/jordan 1.jpeg"> 
+            <img id="jordan2" src="images/jordan 2.jpeg">
+            <img id="jordan3" src="images/jordan 3.jpeg">
+            <br>
+            <button id="button">Click Me</button>
+            <button id="button2">Click Me</button>
+
+            <p>
+            This is some text
+            <br>
+            This is some more text
+            <br>
+            This is even more text
+            <br>
+            Guess what... more text!
+            </p>
+
+            <p id="text">Press the squares!</p>
+
+            <div id="square1"></div>
+            <div id="square2"></div>
+            <div id="square3"></div>
+            <div id="square4"></div>
+            <div id="square5"></div>
+        </body>
+
+
+</html> 
