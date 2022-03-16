@@ -1,0 +1,82 @@
+
+#jordan1 {
+    height: 300px;
+    width: 300px;
+    position: relative; top:0; left:0;  
+}
+
+#jordan2 {
+    height: 350px;
+    width: 350px;
+    position: absolute; top: 0; left: 0;  
+}
+
+#jordan3 {
+    height: 350px;
+    width: 350px;
+    position: absolute; top:0; left:0;  
+}
+body{
+    background-color: aqua;
+}
+
+button{
+    position: relative; top: 150; left:125;
+}
+
+#button2 {
+    position: relative; top: 200; left:550; 
+}
+
+p{
+    text-align: center;
+}
+
+#square1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    left: 1000;
+    top: -400;
+  }
+
+  #square2 {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    position: relative;
+    left: 1000;
+    top: -400;
+  }
+
+  #square3 {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: relative;
+    left: 1000;
+    top: -400;
+  }
+
+  #square4 {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative;
+    left: 1000;
+    top: -400;
+  }
+
+  #square5 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+    left: 1000;
+    top: -400;
+  }
+
+#text {
+    text-align:right; 
+}
