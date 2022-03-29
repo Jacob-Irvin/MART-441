@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <script src="http://api.worldbank.org/v2/countries/USA/indicators/SP.POP.TOTL?per_page=5000&format=json"></script>
+  <script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("#PopulationInfo").load("USPopData.txt");
+        });
+    });
+
+    function fadeText()
+    {
+        $("#PopulationInfo").fadeOut("slow").fadeIn("slow");
+    }
+
+    $.fn.bgcolor = function () {
+            this.css("background-color", "beige");
+        };
+
+        $(function () {
+            $("button").click(function () {
+                $("#PopulationInfo").bgcolor();
+            });
+
+        });
+</script>
+</head>
+
+<body>
+  <div id="PopulationInfo">Nothing yet</div>
+  <button>Get Population Info</button>
+</body>
+
+</html>

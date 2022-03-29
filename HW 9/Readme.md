@@ -1,0 +1,1 @@
+I had sort of a rough time getting my page to work how I wanted but Im not 100% sure why. I was just fine with last weeks assignment but for some reason I struggled with this weeks. I think I was on the right track but I couldn't get the data to show once the button is clicked. I was following along fine with the examples but had a hard time on creating my own page. 
