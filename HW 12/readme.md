@@ -1,0 +1,1 @@
+I think I was off to a good start for this week I was just having trouble getting the window to pop up upon collision rather than everytime you load the page. I was able to get my array to work properly and my player to move, I just struggled with the collision and collectibles being able to dissapear. 
